@@ -1,50 +1,46 @@
 @font-face {
   font-family: 'Nova Klasse';
   src: url('./novaklasse-semibdoblique-BF65f32c1d466fc.otf') format('woff2'),
-       url('./novaklasse-semibold-BF65f32c1d1314a.otf') format('woff'); /* Add additional file formats if available */
+    url('./novaklasse-semibold-BF65f32c1d1314a.otf') format('woff');
+  /* Add additional file formats if available */
   /* Add other font properties like font-weight and font-style if needed */
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .custom-heading {
-  font-family: 'Nova Klasse', sans-serif; /* Use the Nova Klasse font for this heading */
+  font-family: 'Nova Klasse', sans-serif;
+  /* Use the Nova Klasse font for this heading */
 }
 
 
 
-#section1{
+#section1 {
 
 
 
-background-image: url(./images/background.png);
-background-size: cover;
+  background-image: url(./images/background.png);
+  background-size: cover;
 
 }
 
 
 
 
-.sub-sec{
- 
- 
-  /* background-image: url(./images/DESIGN.png);/ */
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative; */
-  /* animation: rotateImage 5s linear infinite;  */
-
+.sub-sec {
   position: relative;
-  width: 100vw; /* Set width to cover the entire viewport */
-  height: 100vh; /* Set height to cover the entire viewport */
-  overflow: hidden; /* Hide overflow content */
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden; /* Hide overflow on the x-axis */
+  overflow-y: visible; /* Allow overflow on the y-axis */
 }
 
 .sub-sec::before {
@@ -53,14 +49,12 @@ background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 1; /* Set a lower z-index to ensure it appears behind the content */
+  height: 140%;
+  z-index: 1;
   background-image: url(./images/DESIGN.png);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  animation: rotateImage 5s linear infinite; /* Adjust the animation duration and timing function as needed */
-  background-size: contain; /* Ensure the background image fits within the container without cropping */
+ 
+  animation: rotateImage 5s linear infinite;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -69,6 +63,7 @@ background-size: cover;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -76,75 +71,85 @@ background-size: cover;
 
 
 
-
-.welcome{
+.welcome {
   padding-top: 120px;
   color: white;
   font-size: 62px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
-  margin-bottom: -22px;
+  margin-top: 140px;
   position: relative;
   z-index: 1;
-  
+
 
 }
 
-.welcome1{
+.welcome1 {
   color: white;
   font-size: 84px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
 }
-.empow{
+
+.empow {
   color: white;
-  padding-bottom: 80px;
   
+
+}
+
+.soon {
+  padding-top: 30px;
+  color: white;
+  font-size: 62px;
+  font-family: 'Nova Klasse', sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+
+
 }
 
 
 .marquee-container {
-  overflow: hidden; 
-  text-align: center; 
-  
+  overflow: hidden;
+  text-align: center;
+
   position: relative;
- 
+
   /* transform: translateX(26%); 
   transform: translateX(-26%);  */
 
-  margin: 0 285px; 
+  margin: 0 330px;
 
-  
+
 }
 
 .marquee {
-  font-family: 'Nova Klasse', sans-serif; 
-  font-weight: 200; 
-font-size: 44px;
+  font-family: 'Nova Klasse', sans-serif;
+  font-weight: 200;
+  font-size: 44px;
   color: white;
-  padding-bottom: 120px;
-  white-space: nowrap; 
-  right: 0; 
-  animation: marquee 10s linear infinite; 
+  padding-bottom: 0px;
+
+  white-space: nowrap;
+  right: 0;
+  animation: marquee 10s linear infinite;
   position: relative;
   z-index: 1;
+  padding-bottom: 240px;
 
- 
+
 }
 
 
 @keyframes marquee {
-  0% { transform: translateX(100%); } 
-  100% { transform: translateX(-100%); } 
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
