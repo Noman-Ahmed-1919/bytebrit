@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./Header";
+import Brands from './Brands';
 
+import Marquee from 'react-fast-marquee';
 
 
 
@@ -23,12 +25,9 @@ const Home = () => {
         };
     }, []);
 
-    useEffect(() => {
-        console.log(scrollPosition)
+   
 
-
-       
-    }, []);
+    
 
 
     return (
@@ -50,7 +49,12 @@ const Home = () => {
                                 <div className="marquee-container">
                                     <div className="marque-width">
                                         {/* <h1 className="marquee" >EMPOWERING BUSINESSES THROUGH EMPOWERING BUSINESSES THROUGH</h1> */}
+                                        
+                                        <Marquee direction="left" speed={100} delay={5}>
+
                                         <h1 className="marquee" >Coming Soon!</h1>
+
+                                        </Marquee>
 
 
                                     </div>
@@ -94,16 +98,18 @@ const Home = () => {
 
 
 
-
+                    <div className='para1' style={{ position: 'fixed', top: '10%', right: `${100 + scrollPosition}px`, whiteSpace: 'nowrap' }}>
+                    <h1 style={{ transform: `translateX(${scrollPosition}px)` }}>Work</h1>
+                </div>
                 </div>
 
+
+<Brands/>
 
 
             </div>
 
-            <div className='para1' style={{ position: 'fixed', top: '10%', right: `${100 + scrollPosition}px`, whiteSpace: 'nowrap' }}>
-                    <h1 style={{ transform: `translateX(-${scrollPosition}px)` }}>Work</h1>
-                </div>
+           
 
 
 

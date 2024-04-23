@@ -139,24 +139,14 @@ body {
 
   white-space: nowrap;
   right: 0;
-  animation: marquee 10s linear infinite;
-  position: relative;
-  z-index: 1;
+  
   padding-bottom: 240px;
 
 
 }
 
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
 
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 
 
@@ -209,3 +199,27 @@ header.scrolled {
 }
 
 
+#brandsec1{
+  background-image: url(./images/back1.png);
+  background-size: cover;
+}
+
+.h1brand{
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#img1{
+  width: 190px;
+  margin-bottom: 50px;
+  padding: 0px 24px;
+}
+
+
+
+#digitalback{
+  background-image: url(./images/digitalback.png);
+  background-size: cover;
+}
