@@ -6,7 +6,6 @@ import Marquee from 'react-fast-marquee';
 
 
 
-
 const Home = () => {
 
 
@@ -23,11 +22,12 @@ const Home = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+       
     }, []);
 
-   
 
-    
+
+
 
 
     return (
@@ -36,10 +36,6 @@ const Home = () => {
             <div className="sub-sec">
 
                 <div id="section1">
-
-
-
-
                     <Header />
                     <div className="container-fluid">
 
@@ -49,10 +45,10 @@ const Home = () => {
                                 <div className="marquee-container">
                                     <div className="marque-width">
                                         {/* <h1 className="marquee" >EMPOWERING BUSINESSES THROUGH EMPOWERING BUSINESSES THROUGH</h1> */}
-                                        
+
                                         <Marquee direction="left" speed={100} delay={5}>
 
-                                        <h1 className="marquee" >Coming Soon!</h1>
+                                            <h1 className="marquee" >Coming Soon!</h1>
 
                                         </Marquee>
 
@@ -65,6 +61,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+                </div>
+
 
                 <div id="section2">
 
@@ -99,22 +98,12 @@ const Home = () => {
 
 
                     <div className='para1' style={{ position: 'fixed', top: '10%', right: `${100 + scrollPosition}px`, whiteSpace: 'nowrap' }}>
-                    <h1 style={{ transform: `translateX(${scrollPosition}px)` }}>Work</h1>
+                        <h1 style={{ transform: `translateX(${scrollPosition}px)` }}>Work</h1>
+                    </div>
                 </div>
-                </div>
 
 
-<Brands/>
-
-
-            </div>
-
-           
-
-
-
-
-
+                <Brands />
 
 
         </>

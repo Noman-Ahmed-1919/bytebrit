@@ -1,12 +1,27 @@
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import React from 'react';
+import { useEffect } from 'react';
+
+
+import { Routes,Route, useLocation  } from "react-router-dom";
+
 import './App.css';
 import Home from "./components/Home";
 
+
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Digital from './components/Digital';
+import Footer from './components/Footer';
+AOS.init({
+  duration: 1200
+});
+
 function App() {
-  return (
+
+
+
+return (
     <div className="App">
      
 
@@ -14,8 +29,16 @@ function App() {
 
 <Route exact path="/" element={<Home />} />
 
+
 </Routes>
+<Digital/>
+
+
+<Footer/>
+
     </div>
+
+
   );
 }
 
