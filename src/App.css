@@ -4,11 +4,26 @@ body {
   overflow: auto;
 }
 @font-face {
-  font-family: 'Nova Klasse';
+  font-family:  'Nova Klasse';
   src: url('./novaklasse-semibdoblique-BF65f32c1d466fc.otf') format('woff2'),
     url('./novaklasse-semibold-BF65f32c1d1314a.otf') format('woff');
+
   /* Add additional file formats if available */
   /* Add other font properties like font-weight and font-style if needed */
+}
+@font-face {
+  font-family: 'otterco Display';
+  src: url('../src/Demo_Fonts/Fontspring-DEMO-otterco-extralight.otf') format('woff2'),
+       url('../src/Demo_Fonts/Fontspring-DEMO-otterco-extralight.otf') format('woff');
+  font-weight: 200; /* Extra light font weight */
+  font-style: normal; /* Adjust font style if needed */
+}
+@font-face {
+  font-family: 'otterco Display normal';
+  src: url('../src/Demo_Fonts/Fontspring-DEMO-otterco-regular.otf') format('woff2'),
+       url('../src/Demo_Fonts/Fontspring-DEMO-otterco-regular.otf') format('woff');
+  font-weight: 200; /* Extra light font weight */
+  font-style: normal; /* Adjust font style if needed */
 }
 
 @keyframes App-logo-spin {
@@ -22,11 +37,16 @@ body {
 }
 
 .custom-heading {
-  font-family: 'Nova Klasse', sans-serif;
+  font-family: 'Nova Klasse';
   /* Use the Nova Klasse font for this heading */
+  font-weight: 600; /* Adjust font weight if needed */
+  font-style: normal;
 }
 
+.inthe{
+  font-family: 'otterco Display';
 
+}
 
 #section1 {
 
@@ -141,7 +161,7 @@ body {
 
   white-space: nowrap;
   right: 0;
-  
+  padding-right: 12px;
   padding-bottom: 240px;
 
 
@@ -226,6 +246,10 @@ header.scrolled {
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-blend-mode: multiply; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+
+
 }
 
 
@@ -266,6 +290,8 @@ header.scrolled {
   width: 322px;
   padding-top: 70px;
   padding-left: 30px;
+  background-blend-mode: multiply; 
+
 }
 
 .digital2{
@@ -314,6 +340,8 @@ header.scrolled {
 }
 
 .atp{
+  font-family: 'otterco Display normal';
+
   color: white;
   font-size: 16px;
   padding-left: 30px;
@@ -322,6 +350,17 @@ header.scrolled {
 
 
 .getbtn{
+  border: 1px solid #AFAFAF;
+  color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: #635280;
+  padding: 06px 18px;
+  float: right;
+  margin-right: 45px;
+  margin-top: -12px;
+}
+.getbtn2{
   border: 1px solid #AFAFAF;
   color: white;
   font-weight: bold;
@@ -348,9 +387,19 @@ header.scrolled {
   text-align: center;
   color: white;
   font-family: 'Nova Klasse', sans-serif;
-  background: linear-gradient(90deg, white 0%, white 33%, #7713DB 33%, #7713DB 66%, white 66%, white 100%);
+/* 
+  background: linear-gradient(white 20%, white 13%, #7713DB 33%, #7713DB 76%, white 13%, white 13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* background: linear-gradient(white 10%, #7713DB 40%, white 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  background: linear-gradient(to right, white 10%, #7713DB 40%, white 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 
 }
 
@@ -433,4 +482,89 @@ header.scrolled {
 
   border-bottom-left-radius: 10px; /* Radius for bottom left corner */
   border-bottom-right-radius: 10px; 
+}
+
+
+ .h1newsletter{
+ 
+  /* transform: translate(-50%, -50%); */
+  position: relative;
+  bottom: 400px;
+  text-align: center;
+  color: white;
+  font-family: 'Nova Klasse', sans-serif;
+  background: linear-gradient(to right, black 10%, #7713DB 40%, black 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1; /* Ensures the text is above the image */
+  margin-top: 30px;
+  font-size: 64px;
+
+  
+}
+
+
+
+
+.shrink-section {
+ 
+padding-top: 50px;
+ 
+}
+.newsimg1{
+  width: 100%;
+  height: 70vh;
+max-width: 100%;
+padding-left: 20px;
+}
+
+
+
+#newsmain{
+  background-color: #240031; /* Set background color */
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+
+
+.newsletter-form {
+  display: flex;
+justify-content: center;
+position: relative;
+  bottom: 370px;
+}
+
+.email-input {
+  border: none;
+  border-radius: 25px;
+  padding: 25px 20px;
+  background: linear-gradient(to right, #B78DDA 10%, #B78DDA 40%, black 90%);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  padding-right: 350px;
+}
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.subscribe-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: white;
+  color: purple;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #f1f1f1;
+  color: #555;
 }

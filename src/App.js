@@ -6,13 +6,11 @@ import { Routes,Route, useLocation  } from "react-router-dom";
 
 import './App.css';
 import Home from "./components/Home";
-
-
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Digital from './components/Digital';
 import Footer from './components/Footer';
+import Newsletter from './components/Newsletter';
 AOS.init({
   duration: 1200
 });
@@ -31,9 +29,11 @@ return (
 
 
 </Routes>
+
+{/* <Newsletter/> */}
 <Digital/>
 
-
+<Newsletter/>
 <Footer/>
 
     </div>

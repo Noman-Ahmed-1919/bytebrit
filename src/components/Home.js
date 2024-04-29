@@ -48,7 +48,7 @@ const Home = () => {
 
                                         <Marquee direction="left" speed={100} delay={5}>
 
-                                            <h1 className="marquee" >Coming Soon!</h1>
+                                            <h1 className="marquee" >EMPOWERING BUSINESS THROUGH TECHNOLOGY</h1>
 
                                         </Marquee>
 
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
 
 
-                <div id="section2">
+                {/* <div id="section2">
 
                     <div className="container">
                         <div className="row">
@@ -86,7 +86,7 @@ const Home = () => {
                         <div className="row">
                             <div className="col-12 work1">
 
-                                <p>In the fast-paced world of digital marketing staying ahead requires not only adaptability but also a deep understanding of the unique needs of each brand. ByteBrit was founded with a vision to bridge the gap between business and their digitalpotential.Our story is one of continuous growth, innovation, and a story is one of continuous growth, innovation, and a relentless pursuit of excellence.</p>
+                                <p className='inthe'>In the fast-paced world of digital marketing staying ahead requires not only adaptability but also a deep understanding of the unique needs of each brand. ByteBrit was founded with a vision to bridge the gap between business and their digitalpotential.Our story is one of continuous growth, innovation, and a story is one of continuous growth, innovation, and a relentless pursuit of excellence.</p>
 
 
                             </div>
@@ -100,7 +100,7 @@ const Home = () => {
                     <div className='para1' style={{ position: 'fixed', top: '10%', right: `${100 + scrollPosition}px`, whiteSpace: 'nowrap' }}>
                         <h1 style={{ transform: `translateX(${scrollPosition}px)` }}>Work</h1>
                     </div>
-                </div>
+                </div> */}
 
 
                 <Brands />
