@@ -11,24 +11,6 @@ const Newsletter = () =>{
     useEffect(() => {
       gsap.registerPlugin(ScrollTrigger);
   
-      // Define the GSAP animation
-    //   const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: sectionRef.current,
-    //       start: 'top top',
-    //       end: 'bottom bottom',
-    //       scrub: true, 
-    //     },
-    //   });
-  
-    //   tl.to(sectionRef.current, {
-    //     width: '100px', 
-    //   });
-    // }, []);
-
-
-  
-
     gsap.to(sectionRef.current, {
         scrollTrigger: {
             trigger: sectionRef.current,
@@ -42,8 +24,6 @@ const Newsletter = () =>{
             marginLeft: 'calc(50% - 25vw)', // Set the left margin to center the section
             marginRight: 'calc(50% - 25vw)',
 
-           
- 
     });
 }, []);
       return(
@@ -66,8 +46,10 @@ const Newsletter = () =>{
 
       <input
         type="email"
-        placeholder="Enter your email"
+        placeholder="enter your email"
         className="email-input"
+        style={{color:"#1C0034"}}
+        id="custom-input" 
       />
       <button className="subscribe-btn">Subscribe</button>
       </div>

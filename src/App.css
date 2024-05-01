@@ -5,7 +5,7 @@ body {
 }
 @font-face {
   font-family:  'Nova Klasse';
-  src: url('./novaklasse-semibdoblique-BF65f32c1d466fc.otf') format('woff2'),
+  src: url('./novaklasse-semibold-BF65f32c1d1314a.otf') format('woff2'),
     url('./novaklasse-semibold-BF65f32c1d1314a.otf') format('woff');
 
   /* Add additional file formats if available */
@@ -42,22 +42,50 @@ body {
   font-weight: 600; /* Adjust font weight if needed */
   font-style: normal;
 }
-
+.h1about{
+  /* color: #531391; */
+  font-size: 240px;
+  font-weight: bold;
+  margin-left: -900px;
+}
 .inthe{
   font-family: 'otterco Display';
+  background-color: #AE6AE8;
+  border: 1px solid #531391;
+  padding: 18px 26px;
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
 
+margin-left: 1200px;
 }
-
+.onthe{
+  text-align: center;
+  justify-content: center;
+}
 #section1 {
 
 
 
   background-image: url(./images/background.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%; /* Ensure the container occupies full width */
 
 }
 
+.guide{
+  font-family: 'otterco Display';
+  text-transform: uppercase;
 
+  text-align: center;
+  color: white;
+  padding-bottom: 240px;
+padding-top: 20px;
+font-size: 20px;
+}
 
 
 .sub-sec {
@@ -65,14 +93,13 @@ body {
   width: 100%;
   height: 100vh;
 
-  /* overflow-y: visible;  */
   overflow: hidden;
 }
 
 .sub-sec::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -125px;
   left: 0;
   width: 100%;
   height: 140%;
@@ -106,6 +133,8 @@ body {
   margin-top: 140px;
   position: relative;
   z-index: 1;
+  /* line-height: 0.9; */
+
 
 
 }
@@ -141,14 +170,8 @@ body {
 .marquee-container {
   overflow: hidden;
   text-align: center;
-
   position: relative;
-
-  /* transform: translateX(26%); 
-  transform: translateX(-26%);  */
-
-  margin: 0 330px;
-
+margin: -9px 330px;
 
 }
 
@@ -157,15 +180,19 @@ body {
   font-weight: 200;
   font-size: 44px;
   color: white;
-  padding-bottom: 0px;
 
   white-space: nowrap;
   right: 0;
   padding-right: 12px;
-  padding-bottom: 240px;
 
 
 }
+
+.welcome,
+.marquee {
+  line-height: 0.9;
+}
+
 
 
 
@@ -179,15 +206,12 @@ body {
   background-image: url(./images/aboutback.png);
   background-size: cover;
   margin-top: 0px;
+  overflow: hidden; 
+
 
 }
 
-.h1about{
-  color: #531391;
-  font-size: 240px;
-  font-weight: bold;
-  text-align: center;
-}
+
 
 
 
@@ -206,7 +230,7 @@ header.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
 }
 
-
+/* 
 .work1{
   background-color: #8139A3;
   border: 1px solid #531391;
@@ -216,9 +240,8 @@ header.scrolled {
   width: 80%;
   text-align: center;
   font-size: 24px;
-  margin: 0 auto; /* Set left and right margins to auto */
 
-}
+} */
 
 
 #brandsec1{
@@ -227,6 +250,8 @@ header.scrolled {
 }
 
 .h1brand{
+  font-family:  'Nova Klasse';
+
   color: white;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -489,7 +514,7 @@ header.scrolled {
  
   /* transform: translate(-50%, -50%); */
   position: relative;
-  bottom: 400px;
+  bottom: 360px;
   text-align: center;
   color: white;
   font-family: 'Nova Klasse', sans-serif;
@@ -498,7 +523,7 @@ header.scrolled {
   -webkit-text-fill-color: transparent;
   z-index: 1; /* Ensures the text is above the image */
   margin-top: 30px;
-  font-size: 64px;
+  font-size: 60px;
 
   
 }
@@ -523,7 +548,7 @@ padding-left: 20px;
 #newsmain{
   background-color: #240031; /* Set background color */
   padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: -120px;
 
 }
 
@@ -533,7 +558,7 @@ padding-left: 20px;
   display: flex;
 justify-content: center;
 position: relative;
-  bottom: 370px;
+  bottom: 340px;
 }
 
 .email-input {
@@ -541,11 +566,17 @@ position: relative;
   border-radius: 25px;
   padding: 25px 20px;
   background: linear-gradient(to right, #B78DDA 10%, #B78DDA 40%, black 90%);
-  color: white;
+  color: #1C0034;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 100px;
-  padding-right: 350px;
+  padding-right: 320px;
 }
+#custom-input::placeholder {
+  /* Change the color of the placeholder text here */
+  color: #1C0034;
+
+}
+
 .input-container {
   position: relative;
   display: inline-block;

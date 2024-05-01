@@ -33,7 +33,7 @@ const Digital = () => {
 
                         <div className="col-md-8" data-aos="fade-right" data-aos-delay="1000">
 
-                            <h1 className="h1digit">DIGITAL MARKETING</h1>
+                            <h1 className="h1digit">Digital Marketing</h1>
                             <p className="atp">At Byte Brit, we harness the power of digital marketing to propel your brand to new heights in the digital landscape. Our comprehensive digital marketing strategies are tailored to meet your unique business objectives and target audience. From search engine optimization (SEO) and social media marketing to content creation and email campaigns, we employ the latest tools and techniques to increase your online visibility, drive qualified traffic to your website, and ultimately boost your conversions and ROI.</p>
 
 

@@ -22,7 +22,7 @@ const Brands = () =>{
             <div className="row">
                 <div className="col-12">
 
-<h1 className="h1brand">BRANDS WEHAVEWORKED WITH</h1>
+<h1 className="h1brand">BRANDS WE  HAVE  WORKED WITH</h1>
 
 <Marquee direction="left" speed={100} delay={5}>
 

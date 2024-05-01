@@ -30,7 +30,6 @@ return (
 
 </Routes>
 
-{/* <Newsletter/> */}
 <Digital/>
 
 <Newsletter/>

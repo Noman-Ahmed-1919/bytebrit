@@ -3,6 +3,7 @@ import Header from "./Header";
 import Brands from './Brands';
 
 import Marquee from 'react-fast-marquee';
+import About from './About';
 
 
 
@@ -22,7 +23,7 @@ const Home = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-       
+
     }, []);
 
 
@@ -41,10 +42,9 @@ const Home = () => {
 
                         <div className="row">
                             <div className="col-12">
-                                <h1 className="welcome">WELCOME  TO <br></br> <span className="welcome1">BYTEBRIT</span></h1>
+                                <h1 className="welcome">WELCOME &nbsp;TO <br></br> <span className="welcome1">BYTEBRIT</span></h1>
                                 <div className="marquee-container">
                                     <div className="marque-width">
-                                        {/* <h1 className="marquee" >EMPOWERING BUSINESSES THROUGH EMPOWERING BUSINESSES THROUGH</h1> */}
 
                                         <Marquee direction="left" speed={100} delay={5}>
 
@@ -56,54 +56,25 @@ const Home = () => {
                                     </div>
                                 </div>
 
-                                {/* <h1 className="soon">Coming Soon</h1> */}
+                                <p className='guide' >We guide game-changing Tech, AI & Commerce <br></br> Brands, across platforms & places,<br></br> through agile design & digital experience.
+                                </p>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
 
-                </div>
+            </div>
 
 
-                {/* <div id="section2">
-
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-
-                                <h1 className="h1about">ABOUT</h1>
-
-                            </div>
-
-                        </div>
-                    </div>
+           <About/>
 
 
 
 
 
-                    <div className="container pb-5">
-                        <div className="row">
-                            <div className="col-12 work1">
-
-                                <p className='inthe'>In the fast-paced world of digital marketing staying ahead requires not only adaptability but also a deep understanding of the unique needs of each brand. ByteBrit was founded with a vision to bridge the gap between business and their digitalpotential.Our story is one of continuous growth, innovation, and a story is one of continuous growth, innovation, and a relentless pursuit of excellence.</p>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div className='para1' style={{ position: 'fixed', top: '10%', right: `${100 + scrollPosition}px`, whiteSpace: 'nowrap' }}>
-                        <h1 style={{ transform: `translateX(${scrollPosition}px)` }}>Work</h1>
-                    </div>
-                </div> */}
-
-
-                <Brands />
+            <Brands />
 
 
         </>
