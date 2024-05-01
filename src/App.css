@@ -47,19 +47,29 @@ body {
   font-size: 240px;
   font-weight: bold;
   margin-left: -900px;
+  padding-top: 180px;
+  padding-bottom: 50px;
 }
 .inthe{
   font-family: 'otterco Display';
-  background-color: #AE6AE8;
-  border: 1px solid #531391;
-  padding: 18px 26px;
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurred background */  border: 1px solid #531391;
+  padding: 22px 26px;
   border-radius: 10px;
   color: white;
   width: 80%;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
 
-margin-left: 1200px;
+margin-left: 1230px;
+}
+.aboutwork{
+margin-top: -340px;
+padding-bottom: 100px;
+}
+#auto{
+  margin: 0 auto; /* Center horizontally */
+
 }
 .onthe{
   text-align: center;
