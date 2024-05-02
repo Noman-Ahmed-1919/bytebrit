@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import Digital from './components/Digital';
 import Footer from './components/Footer';
 import Newsletter from './components/Newsletter';
+import Reviews from './components/Reviews';
 AOS.init({
   duration: 1200
 });
@@ -31,7 +32,7 @@ return (
 </Routes>
 
 <Digital/>
-
+<Reviews/>
 <Newsletter/>
 <Footer/>
 

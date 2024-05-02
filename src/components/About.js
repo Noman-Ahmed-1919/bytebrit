@@ -15,7 +15,7 @@ const About = () =>{
 
         gsap.to(sectionRef.current, {
             
-            duration: 7, 
+            duration: 5, 
 
             scrollTrigger: {
                 trigger: sectionRef.current,
