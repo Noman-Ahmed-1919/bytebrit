@@ -23,10 +23,10 @@ const About = () =>{
 
                 end: 'bottom center',
                 scrub: true,
-                onToggle: self => {
-                    const isCenter = self.isActive;
-                    sectionRef.current.style.color = isCenter ? '#531391' : 'white';
-                },
+                // onToggle: self => {
+                //     const isCenter = self.isActive;
+                //     sectionRef.current.style.color = isCenter ? '#531391' : 'white';
+                // },
 
             },
             x: '52%', // Move to the center of the viewport
@@ -67,7 +67,7 @@ const About = () =>{
             <h1   ref={sectionRef}  className="h1about">ABOUT</h1>
            
            <div className='aboutwork'>
-           <p  ref={workRef}  className='inthe'>In the fast-paced world of digital marketing staying ahead requires not only adaptability but also a deep understanding of the unique needs of each brand. ByteBrit was founded with a vision to bridge the gap between business and their digitalpotential.Our story is one of continuous growth, innovation, and a story is one of continuous growth, innovation, and a relentless pursuit of excellence.</p>
+           <p  ref={workRef}  className='inthe'>In the fast paced world of digital marketing staying ahead requires not only adaptability but also a deep understanding of the unique needs of each brand. ByteBrit was founded with a vision to bridge the gap between business and their digitalpotential.Our story is one of continuous growth, innovation, and a story is one of continuous growth, innovation, and a relentless pursuit of excellence.</p>
 
            </div>
 

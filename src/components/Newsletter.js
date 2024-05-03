@@ -20,9 +20,9 @@ const Newsletter = () =>{
            
         },
        
-        width: '50vw', // Set the width you want to shrink to (half of the viewport width)
-            marginLeft: 'calc(50% - 25vw)', // Set the left margin to center the section
-            marginRight: 'calc(50% - 25vw)',
+        width: '70vw', // Set the width you want to shrink to (half of the viewport width)
+            marginLeft: 'calc(50% - 35vw)', // Set the left margin to center the section
+            marginRight: 'calc(50% - 35vw)',
 
     });
 }, []);

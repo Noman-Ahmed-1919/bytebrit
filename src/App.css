@@ -49,22 +49,30 @@ body {
   margin-left: -900px;
   padding-top: 220px;
   padding-bottom: 50px;
+  color: #531391;
 }
 .inthe{
   font-family: 'otterco Display';
-  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blurred background */  border: 1px solid #531391;
-  padding: 22px 26px;
-  border-radius: 10px;
+  background-color: rgba(53, 25, 85, 0.3); /* Semi-transparent background */
+  /* backdrop-filter: blur(10px); Blurred background */
+   border: 1px solid #531391;
+   box-shadow: inset 0 0 10px 5px rgba(83, 19, 145, 0.5); /* Shadow effect */
+
+padding-top: 20px; 
+padding-right: 26px;
+padding-left: 26px;
+ border-radius: 40px;
   color: white;
   width: 80%;
+  height: 300px;
   text-align: center;
   font-size: 32px;
-
+line-height: 1.1;
 margin-left: 1230px;
+padding-bottom: 80px;
 }
 .aboutwork{
-margin-top: -380px;
+margin-top: -320px;
 padding-bottom: 100px;
 }
 #auto{
@@ -626,7 +634,11 @@ position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
   color: white;
-  margin-left: 1030px;
+  /* margin-left: 1190px; */
+  margin-left: 101%; /* Move off-screen to the right */
+  position: relative; /* Add position property */
+  z-index: 1; /* Set a lower z-index value */
+
 }
 #reviews-main{
   background-image: url(./images/Reviewsback.png);
@@ -635,4 +647,76 @@ position: relative;
   background-position: center; /* Center the background image */
   overflow: hidden;
 
+}
+
+.testimonial-container {
+  width: 350px;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #641ed6;
+  color: #9f74e2;
+  display: flex; /* Make the container a flex container */
+  flex-direction: column; /* Align children vertically */
+  /* align-items: center; Center children horizontally   */
+
+}
+.testimonial-container {
+  position: relative; /* Ensure testimonial containers have a positioning context */
+  z-index: 2; /* Set a higher z-index value than h1reviews */
+}
+
+.testimonial-content {
+  display: flex;
+  margin-bottom: 10px;
+
+
+}
+
+.testimonial-heading {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 28px;
+  /* font-weight: bold; */
+  font-family:  'Nova Klasse';
+  padding-right: 30px;
+  padding-left: 10px;
+
+}
+.star-icon {
+  width: 20px;
+  height: 20px;
+  margin: 05px 5px;
+}
+.stars-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.testimonial-text{
+  font-size: 15px;
+  line-height: 1.1;
+  padding-left: 10px;
+
+}
+
+
+.testimonial-flex{
+  display: flex;
+  justify-content: center; /* Center the flex items horizontally */
+  align-items: center; /* Center the flex items vertically */
+  gap: 40px; /* Add some gap between the flex items */
+  margin-bottom: 40px;  
+}
+
+#flex-right{
+  margin-left: 80px;
+  margin-top: -390px;
+}
+
+
+#sec-rev{
+  padding-bottom: 50px;
+}
+.rev-setting{
+  padding-top: 100px;
 }
