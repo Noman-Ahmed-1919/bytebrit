@@ -7,6 +7,12 @@ import reviewsimg1 from "../images/Star 1.png"
 const Reviews = () => {
 
     const sectionRef = useRef(null);
+    const testimonialRef = useRef(null);
+    const testimonialRef1 = useRef(null);
+    const testimonialRef2 = useRef(null);
+    const testimonialRef3 = useRef(null);
+
+
 
 
 
@@ -19,7 +25,7 @@ const Reviews = () => {
 
             scrollTrigger: {
                 trigger: sectionRef.current,
-                start: 'top 80px',
+                start: '',
 
                 end: 'bottom center',
                 scrub: true,
@@ -32,6 +38,57 @@ const Reviews = () => {
         });
 
 
+        gsap.to(testimonialRef.current.children, {
+            y: '-100%', // Move the testimonial containers upward
+            // opacity: 0, // Fade out the testimonial containers
+            duration: 1, // Animation duration
+            ease: 'power2.inOut', // Easing function
+            scrollTrigger: {
+                trigger: testimonialRef.current, // Use the testimonial container as the trigger
+                start: '', // Start the animation when the top of the testimonial container reaches the center of the viewport
+                end: 'bottom center', // End the animation when the bottom of the testimonial container reaches the center of the viewport
+                scrub: true, // Smoothly animate the property changes as the user scrolls
+            },
+        });
+
+        gsap.to(testimonialRef1.current.children, {
+            y: '-70%', // Move the testimonial containers upward
+            // opacity: 0, // Fade out the testimonial containers
+            duration: 1, // Animation duration
+            ease: 'power2.inOut', // Easing function
+            scrollTrigger: {
+                trigger: testimonialRef.current, // Use the testimonial container as the trigger
+                start: '', // Start the animation when the top of the testimonial container reaches the center of the viewport
+                end: 'bottom center', // End the animation when the bottom of the testimonial container reaches the center of the viewport
+                scrub: true, // Smoothly animate the property changes as the user scrolls
+            },
+        });
+
+        gsap.to(testimonialRef2.current.children, {
+            y: '-70%', // Move the testimonial containers upward
+            // opacity: 0, // Fade out the testimonial containers
+            duration: 1, // Animation duration
+            ease: 'power2.inOut', // Easing function
+            scrollTrigger: {
+                trigger: testimonialRef.current, // Use the testimonial container as the trigger
+                start: '', // Start the animation when the top of the testimonial container reaches the center of the viewport
+                end: 'bottom center', // End the animation when the bottom of the testimonial container reaches the center of the viewport
+                scrub: true, // Smoothly animate the property changes as the user scrolls
+            },
+        });  
+        
+        gsap.to(testimonialRef3.current.children, {
+            y: '-70%', // Move the testimonial containers upward
+            // opacity: 0, // Fade out the testimonial containers
+            duration: 1, // Animation duration
+            ease: 'power2.inOut', // Easing function
+            scrollTrigger: {
+                trigger: testimonialRef.current, // Use the testimonial container as the trigger
+                start: '', // Start the animation when the top of the testimonial container reaches the center of the viewport
+                end: 'bottom center', // End the animation when the bottom of the testimonial container reaches the center of the viewport
+                scrub: true, // Smoothly animate the property changes as the user scrolls
+            },
+        });
 
 
     }, []);
@@ -50,28 +107,9 @@ const Reviews = () => {
 </div>
 
 
-                            <div className='testimonial-flex' id='flex-right'>
+                            <div className='testimonial-flex'  id='flex-right'>
 
-
-                                <div className="testimonial-container">
-                                    <div className="testimonial-content">
-                                        <h2 className="testimonial-heading">Jack</h2>
-                                        <div className="stars-container">
-                                            {[1, 2, 3, 4, 5].map((star) => (
-                                                <img
-                                                    key={star}
-                                                    src={reviewsimg1} // Path to your star image
-                                                    alt="star"
-                                                    className="star-icon"
-                                                />
-                                            ))}
-                                        </div>
-
-                                    </div>
-                                    <p className="testimonial-text">
-                                        "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
-                                    </p>
-                                </div>
+                            <div ref={testimonialRef2}>
 
                                 <div className="testimonial-container">
                                     <div className="testimonial-content">
@@ -92,12 +130,39 @@ const Reviews = () => {
                                         "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
                                     </p>
                                 </div>
+                                </div>
+
+<div ref={testimonialRef}>
+
+                                <div className="testimonial-container" >
+                                    <div className="testimonial-content">
+                                        <h2 className="testimonial-heading">Jack</h2>
+                                        <div className="stars-container">
+                                            {[1, 2, 3, 4, 5].map((star) => (
+                                                <img
+                                                    key={star}
+                                                    src={reviewsimg1} // Path to your star image
+                                                    alt="star"
+                                                    className="star-icon"
+                                                />
+                                            ))}
+                                        </div>
+
+                                    </div>
+                                    <p className="testimonial-text">
+                                        "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
+                                    </p>
+                                </div>
+                                </div>
+
                             </div>
 
 
 
                             <div className='testimonial-flex'>
 
+                            <div ref={testimonialRef3}>
+
 
 <div className="testimonial-container">
     <div className="testimonial-content">
@@ -118,6 +183,11 @@ const Reviews = () => {
         "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
     </p>
 </div>
+</div>
+
+
+
+<div ref={testimonialRef1}>
 
 <div className="testimonial-container">
     <div className="testimonial-content">
@@ -134,10 +204,12 @@ const Reviews = () => {
         </div>
 
     </div>
-    <p className="testimonial-text">
+    <p className="testimonial-text" >
         "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
     </p>
 </div>
+</div>
+
 </div>
 
                         </div>

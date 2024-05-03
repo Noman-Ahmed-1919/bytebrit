@@ -410,6 +410,31 @@ header.scrolled {
   float: right;
   margin-right: 45px;
   margin-top: -12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-position 0.4s ease;
+}
+.getbtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  transition: width 0.4s ease;
+}
+.getbtn:hover{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)); /* Gradient colors */
+  transition: width 0.4s ease;
+}
+.getbtn:hover::before {
+  width: 0;
+}
+
+.getbtn:hover {
+  background-position: right;
 }
 .getbtn2{
   border: 1px solid #AFAFAF;
@@ -704,8 +729,8 @@ position: relative;
   display: flex;
   justify-content: center; /* Center the flex items horizontally */
   align-items: center; /* Center the flex items vertically */
-  gap: 40px; /* Add some gap between the flex items */
-  margin-bottom: 40px;  
+  gap: 80px; /* Add some gap between the flex items */
+  margin-bottom: 100px;  
 }
 
 #flex-right{
@@ -719,4 +744,5 @@ position: relative;
 }
 .rev-setting{
   padding-top: 100px;
+  padding-bottom: 100px;
 }
