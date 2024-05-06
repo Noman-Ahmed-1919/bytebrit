@@ -746,3 +746,61 @@ position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+
+/*======================== work css ============================== */
+
+#work-main{
+  background: linear-gradient(#7200CC, #2EB5F0);
+overflow: hidden;
+
+}
+
+.h1work{
+  font-family:  'Nova Klasse';
+  font-size: 200px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: position 0.3s ease, opacity 0.3s ease;
+  
+  padding-bottom: 50px;
+}
+
+.h2project{
+  color: white;
+  font-size: 100px;
+  margin-left: 101%; /* Move off-screen to the right */
+  margin-top: 280px;
+
+  position: fixed;
+  top: 10px;
+}
+
+.h3tenup{
+  color: white;
+  margin-left: 25%;
+  margin-top: 300px;
+  position: fixed;
+  top: 10px;
+  visibility: hidden; /* Initially hide the element */
+  z-index: 2;
+
+}
+.h3tenup.visible {
+  visibility: visible; /* Show the element when needed */
+}
+
+.workimg1{
+width: 500px;
+height: 500px;
+display: block;
+margin: auto;
+z-index: 1;
+
+}
+
+#gape-img{
+  padding-top: 480px;
+}
+

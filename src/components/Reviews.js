@@ -25,7 +25,7 @@ const Reviews = () => {
 
             scrollTrigger: {
                 trigger: sectionRef.current,
-                start: '',
+                start: 'top 200px',
 
                 end: 'bottom center',
                 scrub: true,

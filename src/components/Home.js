@@ -4,6 +4,7 @@ import Brands from './Brands';
 
 import Marquee from 'react-fast-marquee';
 import About from './About';
+import Work from './Work';
 
 
 
@@ -75,6 +76,8 @@ const Home = () => {
 
 
             <Brands />
+
+            <Work/>
 
 
         </>
