@@ -10,13 +10,15 @@ import workimg3 from "../images/anchor.png"
 
 const Work = () => {
 
-  
-
     const tenupRef = useRef(null);
+    const lamsonRef = useRef(null);
+    const anchorRef = useRef(null);
+
     const tenupRef1 = useRef(null);
+    const lamsonRef1 = useRef(null);
+    const anchorRef1 = useRef(null);
+
     const workImgRef = useRef(null); // Reference to the work image
-
-
     const workHeadingRef = useRef(null);
     let isScrolling = false;
 
@@ -42,8 +44,78 @@ const Work = () => {
 
         });
 
+        gsap.to(lamsonRef.current, {
+
+            duration: 1,
+            scrollTrigger: {
+                // trigger: tenupRef.current,
+                trigger: workImgRef.current, // Use workimg1 as the trigger
+
+
+                start: 'top center',
+                end: 'bottom center',
+                scrub: true,
+            },
+            x: '-2200', // Move to the center of the viewport
+            ease: 'power2.inOut', // Use easing for smooth animation
+
+        });
+
+        gsap.to(anchorRef.current, {
+
+            duration: 1,
+            scrollTrigger: {
+                // trigger: tenupRef.current,
+                trigger: workImgRef.current, // Use workimg1 as the trigger
+
+
+                start: 'top center',
+                end: 'bottom center',
+                scrub: true,
+            },
+            x: '-2200', // Move to the center of the viewport
+            ease: 'power2.inOut', // Use easing for smooth animation
+
+        });
+
 
         gsap.to(tenupRef1.current, {
+
+            duration: 8,
+            scrollTrigger: {
+                // trigger: tenupRef1.current,
+                trigger: workImgRef.current, // Use workimg1 as the trigger
+
+
+                start: 'top center',
+                end: 'bottom center',
+                scrub: true,
+            },
+            x: '-2200', // Move to the center of the viewport
+            ease: 'power2.inOut', // Use easing for smooth animation
+
+        });
+
+
+        gsap.to(lamsonRef1.current, {
+
+            duration: 8,
+            scrollTrigger: {
+                // trigger: tenupRef1.current,
+                trigger: workImgRef.current, // Use workimg1 as the trigger
+
+
+                start: 'top center',
+                end: 'bottom center',
+                scrub: true,
+            },
+            x: '-2200', // Move to the center of the viewport
+            ease: 'power2.inOut', // Use easing for smooth animation
+
+        });
+
+
+        gsap.to(anchorRef1.current, {
 
             duration: 8,
             scrollTrigger: {
@@ -155,27 +227,27 @@ const Work = () => {
 
                             {/*=========== second slider ================*/}
 
-                            {/* <h2 className="h2project" ref={tenupRef}>LAMSON</h2>
-                            <h3 className='h3tenup' ref={tenupRef1}>UIUX Design, <br></br> Branding Visual Design,<br></br> Web Development</h3>
+                             <h2 className="h2project1" ref={lamsonRef}>LAMSON</h2>
+                             <h3 className='h3tenup1' ref={lamsonRef1}>UIUX Design, <br></br> Branding Visual Design,<br></br> Web Development</h3>
 
 
-                            <div ref={tenupimgRef1} >
-                                <img src={workimg2} alt="star" className="workimg1" />
+                             <div id='gape-img2'>
+                                 <img src={workimg2} alt="star" className="workimg1" />
 
-                            </div> */}
-
-
-
-                            {/*=========== third slider ================*/}
-
-                            {/* <h2 className="h2project" ref={tenupRef}>ANCHOR AI</h2>
-                            <h3 className='h3tenup' ref={tenupRef1}>Market Research, Design <br></br> & Marketing, Web Design<br></br> & Development, Search<br></br> Engine, Marketing</h3>
+                             </div> 
 
 
-                            <div ref={tenupimgRef1} >
+
+                            {/* =========== third slider ================*/}
+
+                             <h2 className="h2project2" ref={anchorRef}>ANCHOR AI</h2>
+                            <h3 className='h3tenup2' ref={anchorRef1}>Market Research, Design <br></br> & Marketing, Web Design<br></br> & Development, Search<br></br> Engine, Marketing</h3>
+
+
+                            <div id='gape-img3'>
                                 <img src={workimg3} alt="star" className="workimg1" />
 
-                            </div> */}
+                            </div> 
 
 
                         </div>

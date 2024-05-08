@@ -43,8 +43,10 @@ const Home = () => {
 
                         <div className="row">
                             <div className="col-12">
+
                                 <h1 className="welcome">WELCOME &nbsp;TO <br></br> <span className="welcome1">BYTEBRIT</span></h1>
                                 <div className="marquee-container">
+
                                     <div className="marque-width">
 
                                         <Marquee direction="left" speed={100} delay={5}>
@@ -77,7 +79,7 @@ const Home = () => {
 
             <Brands />
 
-            <Work/>
+            {/* <Work/> */}
 
 
         </>

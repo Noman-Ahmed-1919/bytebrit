@@ -14,8 +14,8 @@ const Newsletter = () =>{
     gsap.to(sectionRef.current, {
         scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top top",
-            end: "bottom bottom",
+            start: "",
+            end: "",
             scrub: 1, // Adjust the scrub value
            
         },
@@ -29,15 +29,16 @@ const Newsletter = () =>{
       return(
         <>
         
-        <div id='newsmain'>
+        <div  id='newsmain'>
 
 
-        <section ref={sectionRef} className="shrink-section">
+        <section  ref={sectionRef} className="shrink-section" >
 
-<div className='container-fluid'>
+<div  className='container-fluid'>
     <div className='row'>
         <div className='col-12'>
-        <img  className="newsimg1" src={newsimg1} alt="" />
+            <img className="newsimg1"   src={newsimg1} alt="" />
+
 
 <h1 className='h1newsletter'>NEWSLETTER</h1>
 
@@ -62,11 +63,43 @@ const Newsletter = () =>{
 
 </div>
 
-
-
     </section>
+    </div>
+
+
+
+
+
+    <section id='mobile'>
+    <div  className='container-fluid'>
+    <div className='row'>
+        <div className='col-12'>
+
+
+<h1 className='h1newsletter'>NEWSLETTER</h1>
+
+<div className="newsletter-form">
+<div className="input-container">
+
+      <input
+        type="email"
+        placeholder="enter your email"
+        className="email-input"
+        style={{color:"#1C0034"}}
+        id="custom-input" 
+      />
+      <button className="subscribe-btn">Subscribe</button>
+      </div>
 
     </div>
+
+        </div>
+         
+    </div>
+
+</div>
+    </section>
+
 
         </>
     )

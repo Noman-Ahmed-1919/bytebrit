@@ -33,6 +33,8 @@ const Brands = () =>{
                 <img id="img1" src={img5} alt="" />
                 <img id="img1" src={img6} alt="" />
                 <img id="img1" src={img7} alt="" />
+               
+
 
 
                 </Marquee>
