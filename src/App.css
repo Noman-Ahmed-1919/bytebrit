@@ -2674,3 +2674,9 @@ padding-top: 20px;
   margin-top: -51px;
 }
             }
+
+.gape-img,
+.gape-img2,
+.gape-img3{
+  transition: all 0.5s;
+}

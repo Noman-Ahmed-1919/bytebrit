@@ -187,9 +187,11 @@ const Work = () => {
         window.addEventListener('scroll', handleScroll);
 
         window.addEventListener('scroll', handleScroll);
-
+        window.addEventListener('scroll', changeBgcolorScroll);
+        
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', changeBgcolorScroll);
         };
     
        
@@ -197,6 +199,32 @@ const Work = () => {
             
 
     }, []);
+
+    const changeBgcolorScroll = ()=> {
+        let elem = document.getElementById('gape-img')
+        let elem2 = document.getElementById('gape-img2')
+        let elem3 = document.getElementById('gape-img3')
+        let sect = document.getElementById('work-main')
+        if(elementIsVisibleInViewport(elem, true)){
+            sect.style.background= "linear-gradient(#7200CC, #2EB5F0)"
+        }else if(elementIsVisibleInViewport(elem2, true)){
+            sect.style.background= "red";
+        }
+        else if(elementIsVisibleInViewport(elem3, true)){
+            sect.style.background= "purple";
+        }
+       
+    }
+
+    const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
+        const { top, left, bottom, right } = el.getBoundingClientRect();
+        const { innerHeight, innerWidth } = window;
+        return partiallyVisible
+          ? ((top > 0 && top < innerHeight) ||
+              (bottom > 0 && bottom < innerHeight)) &&
+              ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth))
+          : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
+      };
 
 
 
