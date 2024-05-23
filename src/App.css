@@ -228,13 +228,12 @@ font-size: 20px;
 }
 
 
-.marquee-container {
+/* .marquee-container {
   overflow: hidden;
   text-align: center;
   position: relative;
-margin: -9px 330px;
 
-}
+} */
 
 .marquee {
   font-family: 'Nova Klasse', sans-serif;
@@ -243,15 +242,10 @@ margin: -9px 330px;
   color: white;
 
   white-space: nowrap;
-  padding-right: 12px;
 
 
 }
-.marque-width {
-  max-width: 1800px; 
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .welcome,
 .marquee {
@@ -914,7 +908,7 @@ z-index: 1;
 
 
 .main-heading{
-  max-width: 1360px;
+  max-width: 686px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -936,11 +930,11 @@ z-index: 1;
   }
 
  
-  .marquee-container {
+  /* .marquee-container {
     overflow: hidden;
     text-align: center;
     position: relative;
-  }
+  } */
   
  
   
@@ -950,12 +944,11 @@ z-index: 1;
     font-size: 44px;
     color: white;
     white-space: nowrap;
-    padding-right: 12px;
   }
  
   .welcome {
     color: white;
-    font-size: 84px;
+    font-size: 77px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 140px;
@@ -964,7 +957,7 @@ z-index: 1;
 }
 .welcome1 {
   color: white;
-  font-size: 112px;
+  font-size: 107px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
 }
@@ -1024,17 +1017,12 @@ z-index: 1;
     width: 100%; /* Ensure the container occupies full width */
   height: auto;
   overflow: hidden;
+
+
   
   }
 
  
-  .marquee-container {
-    /* overflow: hidden; */
-    text-align: center;
-    position: relative;
-  }
-  
-  
   
   .marquee {
     font-family: 'Nova Klasse', sans-serif;
@@ -1043,6 +1031,10 @@ z-index: 1;
     color: white;
     white-space: nowrap;
     padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block; /* Display as inline block to center */
+
   }
  
 
@@ -1051,7 +1043,7 @@ z-index: 1;
   .welcome {
     /* padding-top: 120px; */
     color: white;
-    font-size: 84px;
+    font-size: 77px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 140px;
@@ -1061,7 +1053,7 @@ z-index: 1;
 }
 .welcome1 {
   color: white;
-  font-size: 112px;
+  font-size: 106px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
 }
@@ -1125,17 +1117,6 @@ z-index: 1;
   
   }
 
-  .marquee-container {
-    overflow: hidden;
-    text-align: center;
-  
-  }
-  
-  .marque-width {
-    margin: 0 auto; /* Center the content */
-    max-width: 1800px; /* Set a maximum width */
-  }
-  
   .marquee {
     font-family: 'Nova Klasse', sans-serif;
     font-weight: 200;
@@ -1148,7 +1129,7 @@ z-index: 1;
   .welcome {
     /* padding-top: 120px; */
     color: white;
-    font-size: 84px;
+    font-size: 77px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 140px;
@@ -1158,7 +1139,7 @@ z-index: 1;
 }
 .welcome1 {
   color: white;
-  font-size: 112px;
+  font-size: 106px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
 }
@@ -1175,7 +1156,6 @@ z-index: 1;
 .sub-sec {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
 
   overflow: hidden;
 }
@@ -1208,7 +1188,12 @@ z-index: 1;
 
 
  @media screen and (min-width: 768px) and (max-width: 998px) {
-
+  .main-heading {
+    max-width: 559px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
   
   #section1 {
 
@@ -1221,18 +1206,6 @@ z-index: 1;
   
   }
 
-  .marquee-container {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    margin: 0 21.5%; /* Default margin */
-  }
-  
-  .marque-width {
-    margin: 0 auto; /* Center the content */
-    max-width: 1800px; /* Set a maximum width */
-  }
-  
   .marquee {
     font-family: 'Nova Klasse', sans-serif;
     font-weight: 200;
@@ -1243,15 +1216,13 @@ z-index: 1;
   }
  
   .welcome {
-    /* padding-top: 120px; */
     color: white;
-    font-size: 64px;
+    font-size: 62px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 140px;
     position: relative;
     z-index: 1;
-    /* line-height: 0.9; */
 }
 .welcome1 {
   color: white;
@@ -1279,7 +1250,6 @@ z-index: 1;
 .sub-sec::before {
   content: "";
   position: absolute;
-  /* top: -202px; */
   left: 0;
   width: 100%;
   height: 100%;
@@ -1306,7 +1276,12 @@ z-index: 1;
 
  
  @media screen and (min-width: 556px) and (max-width: 768px) {
-
+  .main-heading {
+    max-width: 446px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
  
   #section1 {
 
@@ -1319,18 +1294,7 @@ z-index: 1;
   
   }
 
-  .marquee-container {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    margin: 0 19%; /* Default margin */
-  }
-  
-  .marque-width {
-    margin: 0 auto; /* Center the content */
-    max-width: 1800px; /* Set a maximum width */
-  }
-  
+ 
   .marquee {
     font-family: 'Nova Klasse', sans-serif;
     font-weight: 200;
@@ -1341,9 +1305,8 @@ z-index: 1;
   }
  
   .welcome {
-    /* padding-top: 120px; */
     color: white;
-    font-size: 54px;
+    font-size: 50px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 140px;
@@ -1353,7 +1316,7 @@ z-index: 1;
 }
 .welcome1 {
   color: white;
-  font-size: 73px;
+  font-size: 68px;
   font-family: 'Nova Klasse', sans-serif;
   text-align: center;
 }
@@ -1405,6 +1368,12 @@ z-index: 1;
  
  @media screen and (min-width: 200px) and (max-width: 556px) {
 
+  .main-heading {
+    max-width: 226px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
  
   #section1 {
 
@@ -1417,28 +1386,19 @@ z-index: 1;
   
   }
 
-  .marquee-container {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-  }
-
-  .marque-width {
-    margin: 0 auto; /* Center the content */
-  }
+ 
   .marquee {
     font-family: 'Nova Klasse', sans-serif;
     font-weight: 200;
-    font-size: 26px;
+    font-size: 18px;
     color: white;
     white-space: nowrap;
-    padding-right: 12px;
   }
  
   .welcome {
     /* padding-top: 120px; */
     color: white;
-    font-size: 26px;
+    font-size: 25px;
     font-family: 'Nova Klasse', sans-serif;
     text-align: center;
     margin-top: 60px;
@@ -1458,9 +1418,9 @@ z-index: 1;
   text-transform: uppercase;
   text-align: center;
   color: white;
-  padding-top: 32px;
-  padding-bottom: 109px;
-  font-size: 12px;
+  padding-top: 18px;
+  padding-bottom: 50px;
+  font-size: 9px;
 }
 
 .sub-sec {
