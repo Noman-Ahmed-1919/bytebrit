@@ -38,7 +38,8 @@ const Home = () => {
             <div className="sub-sec">
 
                 <div id="section1">
-                    <Header />
+                <Header />
+
                     <div className="container-fluid">
 
                         <div className="row">
@@ -53,7 +54,7 @@ const Home = () => {
 
                                                 {/* <h1 className="marquee" >EMPOWERING BUSINESS THROUGH TECHNOLOGY</h1> */}
 
-                                                <h1 className="marquee" >WE &nbsp; ARE &nbsp; CURRENTLY REBUILDING</h1>
+                                                <h1 className="marquee" >WE &nbsp; ARE &nbsp; CURRENTLY REBUILDING&nbsp;</h1>
 
 
                                             </Marquee>
@@ -74,13 +75,6 @@ const Home = () => {
             </div>
 
 
-            {/* <About /> */}
-
-
-
-
-
-            {/* <Brands /> */}
 
             {/* <Work /> */}
 

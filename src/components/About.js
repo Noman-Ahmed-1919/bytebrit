@@ -1,14 +1,38 @@
-import React, { useRef, useEffect,  } from 'react';
+import React, { useRef, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { animate } from '../assets/js/animate';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Header from './Header';
+AOS.init({
+    duration: 1200
+});
+
+const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 const About = () =>{
+
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.pathname === "/about") {
+        scrollToSection('about-sec');
+      }
+    }, [location]);
 
     const sectionRef = useRef(null);
     const workRef = useRef(null);
 
 
+  
   
 
     useEffect(() => {
@@ -175,10 +199,10 @@ const About = () =>{
    
     return(
         <>
-        
+
         <div id="section2" className='frame1'>
 
-<div className="container-fluid">
+<div className="container-fluid" id="about">
     <div className="row">
         <div className="col-12" id='auto'>
 
@@ -202,6 +226,13 @@ const About = () =>{
 
 </div>  
         
+
+
+
+
+
+
+
         </>
     )
 }

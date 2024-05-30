@@ -12,15 +12,13 @@ import $ from 'jquery';
                 console.log("leftpos:", leftPosition)
 
                 // Animate frame7 (right to left)
+
                 $(this).find(".frame7").css({ 
-                    right: -leftPosition <= 500 ? `${leftPosition - (leftPosition * 0.8)}%` : 1000 
+                    right:  `${leftPosition - (leftPosition * 0.6)}%`
 
                 });
 
-                // Animate frame7 (left to right)
-                // $(this).find(".frame7").css({ 
-                //     left: leftPosition <= 500 ? `${leftPosition - (leftPosition * 0.8)}%` : 0 
-                // });
+              
             });
         });
 

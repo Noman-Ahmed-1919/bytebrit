@@ -41,7 +41,7 @@ const Reviews = () => {
 
 
         gsap.to(testimonialRef.current.children, {
-            y: '-120%', // Move the testimonial containers upward
+            y: '-160%', // Move the testimonial containers upward
             // opacity: 0, // Fade out the testimonial containers
             duration: 1, // Animation duration
             ease: 'power2.inOut', // Easing function
@@ -54,7 +54,7 @@ const Reviews = () => {
         });
 
         gsap.to(testimonialRef1.current.children, {
-            y: '-90%', // Move the testimonial containers upward
+            y: '-120%', // Move the testimonial containers upward
             // opacity: 0, // Fade out the testimonial containers
             duration: 1, // Animation duration
             ease: 'power2.inOut', // Easing function
@@ -80,7 +80,7 @@ const Reviews = () => {
         });
 
         gsap.to(testimonialRef3.current.children, {
-            y: '-70%', // Move the testimonial containers upward
+            y: '-80%', // Move the testimonial containers upward
             // opacity: 0, // Fade out the testimonial containers
             duration: 1, // Animation duration
             ease: 'power2.inOut', // Easing function
@@ -99,136 +99,133 @@ const Reviews = () => {
         pract()
 
     }, [])
-    
+
     return (
         <>
 
 
-            <section id='reviews-main' class="frame6">
+            <section id='reviews-main'>
 
                 <div className="container-fluid" >
                     <div className="row">
-                        <div className="col-12" id='sec-rev'>
-
-                            <div className='rev-setting'>
+                        <div className="col-12"  class="frame6">
+                            <div id='sec-rev' >
                                 <h1 className='h1reviews frame7' id="moving-heading">REVIEWS</h1>
-
-                            </div>
-
-<div className='rev-margintop'>
-
-                            <div className='testimonial-flex' id='flex-right'>
-
-                                <div ref={testimonialRef2}>
-
-                                    <div className="testimonial-container">
-                                        <div className="testimonial-content">
-                                            <h2 className="testimonial-heading">Jack</h2>
-                                            <div className="stars-container">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <img
-                                                        key={star}
-                                                        src={reviewsimg1} // Path to your star image
-                                                        alt="star"
-                                                        className="star-icon"
-                                                    />
-                                                ))}
-                                            </div>
-
-                                        </div>
-                                        <p className="testimonial-text">
-                                            "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
-                                        </p>
-                                    </div>
                                 </div>
 
-                                <div ref={testimonialRef}>
 
-                                    <div className="testimonial-container" >
-                                        <div className="testimonial-content">
-                                            <h2 className="testimonial-heading">Jack</h2>
-                                            <div className="stars-container">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <img
-                                                        key={star}
-                                                        src={reviewsimg1} // Path to your star image
-                                                        alt="star"
-                                                        className="star-icon"
-                                                    />
-                                                ))}
+                            <div className='rev-margintop'>
+
+                                <div className='testimonial-flex' id='flex-right'>
+
+                                    <div ref={testimonialRef2}>
+
+                                        <div className="testimonial-container">
+                                            <div className="testimonial-content">
+                                                <h2 className="testimonial-heading">Sarah Johnson</h2>
+                                                <div className="stars-container">
+                                                    {[1, 2, 3, 4, 5].map((star) => (
+                                                        <img
+                                                            key={star}
+                                                            src={reviewsimg1} // Path to your star image
+                                                            alt="star"
+                                                            className="star-icon"
+                                                        />
+                                                    ))}
+                                                </div>
+
                                             </div>
-
+                                            <p className="testimonial-text">
+                                                "ByteBrit's website design team delivered beyond expectation! Their professionalism and creativity transformed our online presence, driving remarkable client engagement. Highly recommended!"
+                                            </p>
                                         </div>
-                                        <p className="testimonial-text">
-                                            "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
-                                        </p>
                                     </div>
-                                </div>
 
-                            </div>
+                                    <div ref={testimonialRef} id="mar-jack">
 
+                                        <div className="testimonial-container" >
+                                            <div className="testimonial-content">
+                                                <h2 className="testimonial-heading">David Thompson</h2>
+                                                <div className="stars-container">
+                                                    {[1, 2, 3, 4, 5].map((star) => (
+                                                        <img
+                                                            key={star}
+                                                            src={reviewsimg1} // Path to your star image
+                                                            alt="star"
+                                                            className="star-icon"
+                                                        />
+                                                    ))}
+                                                </div>
 
-
-                            <div className='testimonial-flex'>
-
-                                <div ref={testimonialRef3}>
-
-
-                                    <div className="testimonial-container">
-                                        <div className="testimonial-content">
-                                            <h2 className="testimonial-heading">Nomi</h2>
-                                            <div className="stars-container">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <img
-                                                        key={star}
-                                                        src={reviewsimg1} // Path to your star image
-                                                        alt="star"
-                                                        className="star-icon"
-                                                    />
-                                                ))}
                                             </div>
-
+                                            <p className="testimonial-text">
+"ByteBrit's social media marketing service elevated our brand awareness exponentially! Their strategic approach and responsiveness made for a seamless partnership. Exceptional results!"                                            </p>
                                         </div>
-                                        <p className="testimonial-text">
-                                            "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
-                                        </p>
                                     </div>
+
                                 </div>
 
 
 
-                                <div ref={testimonialRef1}>
+                                <div className='testimonial-flex'>
 
-                                    <div className="testimonial-container">
-                                        <div className="testimonial-content">
-                                            <h2 className="testimonial-heading">Kashu</h2>
-                                            <div className="stars-container">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <img
-                                                        key={star}
-                                                        src={reviewsimg1} // Path to your star image
-                                                        alt="star"
-                                                        className="star-icon"
-                                                    />
-                                                ))}
+                                    <div ref={testimonialRef3}>
+
+
+                                        <div className="testimonial-container">
+                                            <div className="testimonial-content">
+                                                <h2 className="testimonial-heading">Emily Roberts</h2>
+                                                <div className="stars-container">
+                                                    {[1, 2, 3, 4, 5].map((star) => (
+                                                        <img
+                                                            key={star}
+                                                            src={reviewsimg1} // Path to your star image
+                                                            alt="star"
+                                                            className="star-icon"
+                                                        />
+                                                    ))}
+                                                </div>
+
                                             </div>
-
+                                            <p className="testimonial-text">
+"ByteBrit's UI/UX design team crafted an interface that wowed our users! Their attention to detail and understanding of user behavior ensured an intuitive experience. Thrilled with the outcome!"                                            </p>
                                         </div>
-                                        <p className="testimonial-text" >
-                                            "This designer's attention to detail and creativity are unmatched. Their work is consistently stunning and impactful."
-                                        </p>
                                     </div>
+
+
+
+                                    <div ref={testimonialRef1}>
+
+                                        <div className="testimonial-container">
+                                            <div className="testimonial-content">
+                                                <h2 className="testimonial-heading">Michael Adams</h2>
+                                                <div className="stars-container">
+                                                    {[1, 2, 3, 4, 5].map((star) => (
+                                                        <img
+                                                            key={star}
+                                                            src={reviewsimg1} // Path to your star image
+                                                            alt="star"
+                                                            className="star-icon"
+                                                        />
+                                                    ))}
+                                                </div>
+
+                                            </div>
+                                            <p className="testimonial-text" >
+"ByteBrit's video editing service turned our footage into a masterpiece! Their creativity and technical prowess delivered a captivating final product. Highly recommend for brand elevation! "                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
                                 </div>
 
-                            </div>
-
 
                             </div>
-
 
                         </div>
 
-                    </div>
+
+                   
 
                 </div>
 

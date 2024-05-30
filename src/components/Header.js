@@ -1,26 +1,40 @@
-import React from "react";
-import logo from "../images/bytebritlogo.jpeg";
+import React, { useRef, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import logo from "../images/white.png";
 
-import { NavLink } from "react-router-dom";
 
 
-const Header = () =>{
+const Header = ( ) =>{
+
+
+
+
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
+        // section.scrollIntoView({top: section.offsetTop, behavior: "smooth" });
+  
+      }
+    };
+  
 
     const navLinkStyles = ({ isActive }) => {
         return {
-          fontWeight: isActive ? 'bold' : 'normal',
-          color: isActive ? '#279EFF' : '#ffffff',
-          borderBottom: isActive? '3px solid #ffffff' : 'none',
+          // fontWeight: isActive ? 'bold' : 'normal',
+          // color: isActive ? '#279EFF' : '#ffffff',
+          // borderBottom: isActive? '3px solid #ffffff' : 'none',
         }
       }
     
     
 
 
-
-
     return(
         <>
+
+        <div className="heanav">
+
              
 <section  id='hide' className='container'>
 
@@ -28,7 +42,7 @@ const Header = () =>{
 
 
   <a className="navbar-brand" href="#" id="stico" >
-    {/* <img id='logo' style={{ marginTop:"30px" }} src={logo} width={135} height={35} className="d-inline-block align-top" alt="" /> */}
+    <img id='logo' style={{ marginTop:"30px" }} src={logo} width={135} height={35} className="d-inline-block align-top" alt="" />
     
 
   </a>
@@ -38,19 +52,17 @@ const Header = () =>{
   <div className="collapse navbar-collapse homenav" id="navbarSupportedContent">
     <ul className="navbar-nav ms-auto" >
       <li className="nav-item">
-        <NavLink to="/"    id="aboutaa" style={navLinkStyles}  className="nav-link"  >
+        <NavLink to="/"   id="aboutaa"  style={navLinkStyles}  className="nav-link"  >
              Home
         </NavLink>
       </li>
    
       <li className="nav-item" >
-        <NavLink to="/about"  id="abouta" style={navLinkStyles} className="nav-link " >   About </NavLink>
+        <NavLink to="/about" onClick={() => scrollToSection("about")} style={navLinkStyles} smooth="true"  behavior="smooth" id="abouta" className="nav-link " >   About </NavLink>
       </li>
+     
       <li className="nav-item" >
-        <NavLink to="/order" id="abouta1" style={navLinkStyles} className="nav-link" href="#services"> Work</NavLink>
-      </li>
-      <li className="nav-item" >
-        <NavLink to="/products" id="abouta2" style={navLinkStyles} className="nav-link " href="#sec4">  Contact</NavLink>
+        <NavLink to="/digitalback" onClick={() => scrollToSection("digitalback")} smooth="true" id="abouta2" style={navLinkStyles} className="nav-link ">  Services</NavLink>
       </li>
       
       
@@ -64,6 +76,9 @@ const Header = () =>{
 </nav>
 
 </section>
+
+</div>
+
         
         </>
     )

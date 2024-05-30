@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,9 +17,6 @@ const Footer = () => {
                             <h1 className="h1footer">LETS START WORKING TOGETHER</h1>
 
                         </div>
-
-
-
                     </div>
 
                 </div>
@@ -28,17 +27,17 @@ const Footer = () => {
 
                             <ul className="social-links text-center">
                                 <li>
-                                    <span>Instagram</span>
+                                    <a href="https://www.instagram.com/bytebrit?igsh=MWJvZm15M2FqZHA5Ng%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
                                     <span>&#10138;
                                     </span>
                                 </li>
                                 <li>
-                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/company/bytebrit/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                                     <span>&#10138;
                                     </span>
                                 </li>
                                 <li>
-                                    <span>Facebook</span>
+                                    <a href="https://www.facebook.com/profile.php?id=61556716203618&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
                                     <span>&#10138;
                                     </span>
                                 </li>
@@ -48,36 +47,43 @@ const Footer = () => {
 
 
 
-                         
+
 
                             <div className="contact-details">
-                            <p style={{ color: 'white' }}>Contact Detail:</p>
+                                <p className="contact-detail">Contact Detail:</p>
 
-      <p style={{ color: 'white' }}>
-        <span>
-        <FontAwesomeIcon icon={faEnvelope} /> {/* Email icon */}
-        </span>
-        <span style={{ marginLeft: '5px' }}>bytebrit.io@gmail.com</span> {/* Email address */}
-      </p>
-      <p style={{ color: 'white' }}>
-        <span>
-        <FontAwesomeIcon icon={faPhone} /> {/* Phone icon */}
-        </span>
-        <span style={{ marginLeft: '5px' }}>+44 7471 4636 05</span> {/* Phone number */}
-      </p>
-    </div>
+                                <p style={{ color: 'white' }}>
+                                    <span>
+                                        <FontAwesomeIcon icon={faEnvelope} /> {/* Email icon */}
+                                    </span>
+                                    <span style={{ marginLeft: '5px' }}>bytebrit.io@gmail.com</span> {/* Email address */}
+                                </p>
+                                <p style={{ color: 'white' }}>
+                                    <span>
+                                        <FontAwesomeIcon icon={faPhone} /> {/* Phone icon */}
+                                    </span>
+                                    <span style={{ marginLeft: '5px' }}>+44 7471 4636 05</span> {/* Phone number */}
+                                </p>
+                            </div>
 
                         </div>
 
                         <div className="col-md-4">
-                            <p className="enter">Enter your email...</p>
+                            {/* <p className="enter">Enter your email...</p> */}
+                            <input className="enter" placeholder="Enter your email..."></input>
 
                             <div className="message-box">
-      <textarea
-        className="message-input"
-        placeholder="Message"
-      ></textarea>
-    </div>
+                                <textarea
+                                    className="message-input"
+                                    placeholder="Message"
+                                ></textarea>
+                                <div className="sendbutton-main">
+                                <button className="sendbutton">SEND</button>
+                                <span className="right-arrow">&#10140;</span>
+                                </div>
+                              
+
+                            </div>
 
                         </div>
 
@@ -93,13 +99,15 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-12">
 
-                        <div className="horizontal-links">
-      <a href="#home">home</a>
-      <a href="#about">about</a>
-      <a href="#work">work</a>
-      <a href="#services">services</a>
-      <a href="#contact">contact</a>
-    </div>
+                            <div className="horizontal-links">
+                            <Link to="/">home</Link>
+
+                                {/* <a href="#home" >home</a> */}
+                                <a href="#about">about</a>
+                                <a href="#work">work</a>
+                                <a href="#services">services</a>
+                                <a href="#contact">contact</a>
+                            </div>
 
                         </div>
 
