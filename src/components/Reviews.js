@@ -108,10 +108,10 @@ const Reviews = () => {
 
                 <div className="container-fluid" >
                     <div className="row">
-                        <div className="col-12"  class="frame6">
+                        <div className="col-lg-12" class="frame6" id="mobile-reviews">
                             <div id='sec-rev' >
                                 <h1 className='h1reviews frame7' id="moving-heading">REVIEWS</h1>
-                                </div>
+                            </div>
 
 
                             <div className='rev-margintop'>
@@ -159,7 +159,7 @@ const Reviews = () => {
 
                                             </div>
                                             <p className="testimonial-text">
-"ByteBrit's social media marketing service elevated our brand awareness exponentially! Their strategic approach and responsiveness made for a seamless partnership. Exceptional results!"                                            </p>
+                                                "ByteBrit's social media marketing service elevated our brand awareness exponentially! Their strategic approach and responsiveness made for a seamless partnership. Exceptional results!"                                            </p>
                                         </div>
                                     </div>
 
@@ -188,7 +188,7 @@ const Reviews = () => {
 
                                             </div>
                                             <p className="testimonial-text">
-"ByteBrit's UI/UX design team crafted an interface that wowed our users! Their attention to detail and understanding of user behavior ensured an intuitive experience. Thrilled with the outcome!"                                            </p>
+                                                "ByteBrit's UI/UX design team crafted an interface that wowed our users! Their attention to detail and understanding of user behavior ensured an intuitive experience. Thrilled with the outcome!"                                            </p>
                                         </div>
                                     </div>
 
@@ -212,20 +212,20 @@ const Reviews = () => {
 
                                             </div>
                                             <p className="testimonial-text" >
-"ByteBrit's video editing service turned our footage into a masterpiece! Their creativity and technical prowess delivered a captivating final product. Highly recommend for brand elevation! "                                            </p>
+                                                "ByteBrit's video editing service turned our footage into a masterpiece! Their creativity and technical prowess delivered a captivating final product. Highly recommend for brand elevation! "                                            </p>
                                         </div>
                                     </div>
 
                                 </div>
-                                </div>
-
-
                             </div>
+
 
                         </div>
 
+                    </div>
 
-                   
+
+
 
                 </div>
 

@@ -1089,9 +1089,9 @@ header.scrolled {
   /* Add some gap between the flex items */
 }
 
-#flex-right {
+/* #flex-right {
   margin-left: 80px;
-}
+} */
 
 
 
@@ -3791,3 +3791,57 @@ height: 100%;
 }
 
 
+
+@media screen and (min-width: 100px) and (max-width: 992px) {
+
+.testimonial-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonial-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 91px;
+}
+.testimonial-container {
+  width: 55%;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #641ed6;
+  color: #9f74e2;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+#mar-jack {
+  margin-top: 0px; 
+ margin-bottom: 0px;
+}
+#mobile-reviews{
+  text-align: -webkit-center;
+
+}
+.testimonial-heading {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 28px;
+  /* font-weight: bold; */
+  font-family: 'Nova Klasse';
+  /* padding-right: 30px; */
+  padding-left: 10px;
+  text-align: start;
+}
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.1;
+  padding-left: 10px;
+  text-align: start;
+}
+}
